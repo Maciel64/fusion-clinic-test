@@ -3,6 +3,12 @@ import { Link, NavLink, useNavigate } from "react-router-dom"
 import LeftSlope from "../../static/img/slope-left.svg"
 import RightSlope from "../../static/img/slope-right.svg"
 
+/**
+ * Componete NavLinkButton do Header. As pequenas curvaturas na esquerda e direita são formadas por svgs difentes.
+ * 
+ * @param to String de Link para página.
+ * @param text Texto interno do componente.
+ */
 
 export default ({ to, text }) => {
     const navigate = useNavigate()

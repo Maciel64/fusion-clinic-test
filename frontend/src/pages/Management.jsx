@@ -8,17 +8,12 @@ import NavLinkButton from "../components/SubHeader/NavLinkButton"
  */
 
 export default () => {
-    const [ enabledButton, setEnabledButton ] = useState()
-
-    const onNavClicked = (title, enabledId) => {
-        setMainTitle(title)
-        setEnabledButton(enabledId)
-    }
+    const [ enabledButton, setEnabledButton ] = useState(-1)
 
     return (
         <>
-            <NavLinkButton to="especialistas" text="Especialistas" setEnabledButton={onNavClicked} enableId={0} isEnabled={enabledButton} />
-            <NavLinkButton to="clinicos" text="Clínicas" setEnabledButton={onNavClicked} enableId={1} isEnabled={enabledButton} />
+            <NavLinkButton to="especialistas" text="Especialistas" setEnabledButton={setEnabledButton} enabledId={0} isEnabled={enabledButton} />
+            <NavLinkButton to="clinicos" text="Clínicas" setEnabledButton={setEnabledButton} enabledId={1} isEnabled={enabledButton} />
         </>
     )
 }
