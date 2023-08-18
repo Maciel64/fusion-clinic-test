@@ -1,11 +1,10 @@
 import { useContext, useEffect } from "react"
 
-import { useNavigate, Outlet } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 import { UserContext } from "./contexts/UserContext"
 
 import Header from "./components/Header"
-import SubHeader from "./components/SubHeader"
 import Main from "./components/Main"
 
 import "./main.css"
@@ -25,9 +24,8 @@ export default () => {
 	return (
 		<>
 			<Header />
-			<SubHeader />
 			<Main >
-				<Outlet />
+				
 			</Main>
 		</>
 	)

@@ -11,6 +11,14 @@ import UserDataForm from "./Forms/UserDataForm"
 import { useNavigate } from "react-router-dom"
 
 
+/**
+ * Componente SignIn da página de novaconta. Conteúdo interno controlado pela variável pageFormState, que é atualizada dentro de cada form pela setPageFormState.
+ * Para a mudança do conteúdo interno, exitem quatro testes para pageFormState: "creatingNewAccount", "chosingPlan", "passingBankData", "passingUserData". Que renderizam determinada parte da área de formulário da página de SignIn
+ * 
+ * 
+ * @returns SigIn
+ */
+
 
 export default () => {
     const { state } = useContext(UserContext)

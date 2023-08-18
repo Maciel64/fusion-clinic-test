@@ -25,7 +25,7 @@ export default () => {
                         <img src={Logo} width="130px" />
                     </Link>
 
-                    <div className="flex relative top-2">
+                    <div className="flex relative top-2 gap-5">
                         <NavLinkButton to="/financeiro" text="Financeiro" />
                         <NavLinkButton to="/gestao" text="Gestão" />
                         <NavLinkButton to="/configuracoes" text="Configurações" />

@@ -1,3 +1,13 @@
+/**
+ * Componente utilizado dentro do SuperiorStateBar para detonar a fase da página de cadastro.
+ * 
+ * @param text: Texto interno do ListItem
+ * @param selectedPhase: Fase atual para estado do botão. Pode receber os valores GRAY, BLUE ou GREEN.
+ * 
+ * @returns ListItem
+ */
+
+
 const ListItem = ({ text, selectedPhase }) => {
     return (
         <>
@@ -20,6 +30,16 @@ const ListItem = ({ text, selectedPhase }) => {
     )
 }
 
+
+/**
+ * Componente SuperiorStateBar da página de Login/Sigin. Componente com ListItems que variam entre AZUL, VERDE e CINZA
+ * 
+ * @param planPhase: Variável de estado para controlar a fase de esclher plano.
+ * @param bankPhase: Variável de estado para controlar a fase de dados bancários.
+ * @param dataPhase: Variável de estado para controlar a fase de dados do usuário.
+ * 
+ * @returns SuperiorStateBar
+ */
 
 
 export default ({ planPhase, bankPhase, dataPhase }) => {
